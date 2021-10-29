@@ -23,7 +23,7 @@ namespace OpenMyTrunk
                                 if (!door[door.Length - 1].IsOpen) door[door.Length - 1].Open(false);
                                 else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(false);
                             }
-                            else Game.DisplayHelp("You are not in your vehicle!", 3000);
+                            else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
 
                         }
                         else if (Game.IsControlPressed(0, GameControl.VehicleAccelerate))
