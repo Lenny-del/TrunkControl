@@ -12,7 +12,7 @@ namespace OpenMyTrunk
 
         internal static void LoadSettings()
         {
-            Game.LogTrivial("Loading OpenMyTrunk config");
+            Game.LogTrivial("Loading OpenMyTrunk config file");
             var path = "Plugins/OpenMyTrunk/OpenMyTrunk.ini";
             var ini = new InitializationFile(path);
             ini.Create();
