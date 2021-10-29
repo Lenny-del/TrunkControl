@@ -36,7 +36,7 @@ namespace OpenMyTrunk
                     catch (Exception e)
                     {
                         Game.LogTrivial("My eyes spotted an error here...");
-                        Game.LogTrivial("OpenMyTrunk Error Start");
+                        Game.LogTrivial("OpenMyTrunk Error Start. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
                         Game.LogTrivial("======================================================");
                         Game.LogTrivial(e.ToString());
                         Game.LogTrivial("======================================================");
