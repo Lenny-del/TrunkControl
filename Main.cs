@@ -2,7 +2,7 @@
 using Rage;
 using Rage.Native;
 
-namespace OpenMyTrunk
+namespace TrunkPlugin
 {
     internal class Main
     {
@@ -15,7 +15,7 @@ namespace OpenMyTrunk
                     GameFiber.Yield();
                     try
                     {
-                        if ((Game.IsKeyDown(Settings.OpenMyTrunkKey) || Game.IsControllerButtonDown(Settings.OpenMyTrunkButton)))
+                        if ((Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton)))
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(false))
                             {
@@ -36,11 +36,11 @@ namespace OpenMyTrunk
                     catch (Exception e)
                     {
                         Game.LogTrivial("My eyes spotted an error here...");
-                        Game.LogTrivial("OpenMyTrunk Error Start. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
+                        Game.LogTrivial("TrunkPlugin Error Start. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
                         Game.LogTrivial("======================================================");
                         Game.LogTrivial(e.ToString());
                         Game.LogTrivial("======================================================");
-                        Game.LogTrivial("OpenMyTrunk Error End");
+                        Game.LogTrivial("TrunkPlugin Error End");
                     }
                 }
             });
