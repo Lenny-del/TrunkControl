@@ -51,4 +51,12 @@
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET GTA="D:\Program Files\RockstarGames\Grand Theft Auto V"
+
+if exist %25GTA%25 (
+  copy /Y "$(TargetDir)$(ProjectName).dll" "D:\Program Files\RockstarGames\Grand Theft Auto V\Plugins\$(ProjectName).dll"
+  copy /Y "$(TargetDir)$(ProjectName).pdb" "D:\Program Files\RockstarGames\Grand Theft Auto V\Plugins\$(ProjectName).pdb"
+)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
