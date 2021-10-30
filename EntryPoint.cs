@@ -2,7 +2,7 @@
 using Rage;
 using Rage.Attributes;
 
-[assembly: Rage.Attributes.Plugin("TrunkPlugin", Description = "Let's you open your trunk with 1 button click", Author = "Vielfalt")]
+[assembly: Plugin("TrunkPlugin", Description = "Let's you open your trunk with 1 button click", Author = "Vielfalt")]
 namespace TrunkPlugin
 {
     public class EntryPoint

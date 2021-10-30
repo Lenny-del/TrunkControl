@@ -15,7 +15,7 @@ namespace TrunkPlugin
                     GameFiber.Yield();
                     try
                     {
-                        if ((Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton)))
+                        if (Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton))
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(false))
                             {
@@ -26,11 +26,14 @@ namespace TrunkPlugin
                             else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
 
                         }
-                        else if (Game.IsControlPressed(0, GameControl.VehicleAccelerate))
+                         else if (Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton))
                         {
-                            VehicleDoor[] door = Game.LocalPlayer.Character.CurrentVehicle.GetDoors();
-                            if (!door[door.Length - 1].IsOpen) door[door.Length - 1].Open(true);
-                            else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(true);
+                            if (Game.LocalPlayer.Character.IsInAnyVehicle(true))
+                            {
+                                VehicleDoor[] door = Game.LocalPlayer.Character.CurrentVehicle.GetDoors();
+                                if (!door[door.Length - 1].IsOpen) door[door.Length - 1].Open(true);
+                                else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(true);
+                            }
                         }
                     }
                     catch (Exception e)
