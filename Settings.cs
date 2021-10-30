@@ -16,8 +16,8 @@ namespace TrunkPlugin
             var path = "Plugins/TrunkPlugin/TrunkPlugin.ini";
             var ini = new InitializationFile(path);
             ini.Create();
-            TrunkKey = ini.ReadEnum("Keys", "TurnOffEngine", Keys.T);
-            TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TurnOffEngine", ControllerButtons.None);
+            TrunkKey = ini.ReadEnum("Keys", "TrunkKey", Keys.T);
+            TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TrunkButton", ControllerButtons.None);
             Game.LogTrivial("TrunkPlugin: Config loaded.");
         }
     }
