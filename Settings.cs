@@ -6,17 +6,18 @@ namespace TrunkPlugin
 {
     internal static class Settings
     {
-        internal static Keys TrunkPluginKey = Keys.T;
-        internal static ControllerButtons TrunkPluginButton = ControllerButtons.None;
+        internal static Keys TrunkKey = Keys.T;
+        internal static ControllerButtons TrunkButton = ControllerButtons.None;
         internal static readonly string CalloutVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         internal static void LoadSettings()
         {
             Game.LogTrivial("Loading TrunkPlugin config file");
-            InitializationFile initializationFile = new InitializationFile("Plugins/TrunkPlugin/TrunkPlugin.ini");
-            initializationFile.Create();
-            TrunkPluginKey = initializationFile.ReadEnum("Keys", "TrunkPlugin", Keys.T);
-            TrunkPluginButton = initializationFile.ReadEnum<ControllerButtons>("Controller", "TrunkPlugin", ControllerButtons.None);
+            var path = "Plugins/TrunkPlugin/TrunkPlugin.ini";
+            var ini = new InitializationFile(path);
+            ini.Create();
+            TrunkKey = ini.ReadEnum("Keys", "TurnOffEngine", Keys.T);
+            TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TurnOffEngine", ControllerButtons.None);
             Game.LogTrivial("TrunkPlugin: Config loaded.");
         }
     }

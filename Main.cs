@@ -15,7 +15,7 @@ namespace TrunkPlugin
                     GameFiber.Yield();
                     try
                     {
-                        if (Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton))
+                        if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(false))
                             {
@@ -26,7 +26,7 @@ namespace TrunkPlugin
                             else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
 
                         }
-                         else if (Game.IsKeyDown(Settings.TrunkPluginKey) || Game.IsControllerButtonDown(Settings.TrunkPluginButton))
+                         else if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(true))
                             {

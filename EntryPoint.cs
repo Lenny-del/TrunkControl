@@ -11,7 +11,7 @@ namespace TrunkPlugin
         {
             Settings.LoadSettings();
             TrunkPlugin.Main.MainFiber();
-            Game.LogTrivial("TrunkPlugin" + Assembly.GetExecutingAssembly().GetName().Version + " by Vielfalt has been initialised.");
+            Game.LogTrivial("TrunkPlugin " + Assembly.GetExecutingAssembly().GetName().Version + " by Vielfalt has been initialised.");
         }
     }
 }
