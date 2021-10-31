@@ -57,7 +57,7 @@
     <None Include="TrunkPlugin\TrunkPlugin.ini" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TrunkPlugin\version.txt" />
+    <Content Include="TrunkPlugin\version.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
