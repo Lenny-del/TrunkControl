@@ -33,8 +33,8 @@ namespace TrunkPlugin
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
                 Game.Console.Print("[WARNING] A new version of TrunkPlugin is available. Please update to the latest build.");
-                Game.Console.Print("Current version:  " + curVersion);
-                Game.Console.Print("New version:  " + receivedData);
+                Game.Console.Print("[WARNING] Current version:  " + curVersion);
+                Game.Console.Print("[WARNING] New version:  " + receivedData);
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
