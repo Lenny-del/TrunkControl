@@ -12,7 +12,6 @@ namespace TrunkPlugin
             Game.LogTrivial("Reloading TrunkPlugin.ini");
 
             Game.LogTrivial("TrunkPlugin.ini has been reloaded succesfully");
-
         }
     }
 }
