@@ -51,6 +51,7 @@
     <Compile Include="TrunkPlugin\Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrunkPlugin\Settings.cs" />
+    <Compile Include="TrunkPlugin\VersionCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TrunkPlugin\TrunkPlugin.ini" />

@@ -12,13 +12,13 @@ namespace TrunkPlugin
 
         internal static void LoadSettings()
         {
-            Game.LogTrivial("Loading TrunkPlugin config file");
+            Game.Console.Print("Loading TrunkPlugin config file");
             var path = "Plugins/TrunkPlugin/TrunkPlugin.ini";
             var ini = new InitializationFile(path);
             ini.Create();
             TrunkKey = ini.ReadEnum("Keys", "TrunkKey", Keys.T);
             TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TrunkButton", ControllerButtons.None);
-            Game.LogTrivial("TrunkPlugin: Config loaded.");
+            Game.Console.Print("TrunkPlugin: Config loaded.");
         }
     }
 }
