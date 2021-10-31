@@ -4,4 +4,4 @@ Credits:
 
 -Thota and Vincent for helping me fix various issues
 
--JefDaDawg for keeping me motivated to continue working on the project
+-JeffDaDawg for keeping me motivated to continue working on the project
