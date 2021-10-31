@@ -19,7 +19,7 @@ namespace TrunkPlugin
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
             Game.Console.Print();
-            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " ~o~by Vielfalt", "~b~TrunkPlugin.ini has been reloaded succesfully!");
+            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " ~o~by Vielfalt", "~w~TrunkPlugin.ini has been reloaded ~g~succesfully!");
         }
 
         [Rage.Attributes.ConsoleCommand("Displays latest and current version of TrunkPlugin")]
@@ -37,7 +37,7 @@ namespace TrunkPlugin
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
             Game.Console.Print();
-            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " ~o~by Vielfalt", "~w~Installed version: ~g~" + curVersion + "<br>~w~Latest Version: ~r~" + receivedData + "");
+            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " ~o~by Vielfalt", "~w~Installed Version: ~g~" + curVersion + "<br>~w~Latest Version: ~r~" + receivedData + "");
         }
     }
 }
