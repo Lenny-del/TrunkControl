@@ -1,6 +1,5 @@
 ﻿using System;
 using Rage;
-using Rage.Native;
 
 namespace TrunkPlugin
 {
