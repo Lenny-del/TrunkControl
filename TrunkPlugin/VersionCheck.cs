@@ -9,12 +9,12 @@ namespace TrunkPlugin
         public static bool isUpdateAvailable()
         {
             string curVersion = Settings.CalloutVersion;
-            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.txt");
+            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.xml");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
             try
             {
-                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.txt").Trim();
+                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.xml").Trim();
             }
             catch (WebException)
             {
