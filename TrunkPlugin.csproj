@@ -56,6 +56,9 @@
   <ItemGroup>
     <None Include="TrunkPlugin\TrunkPlugin.ini" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="TrunkPlugin\version.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>SET GTA="D:\Program Files\RockstarGames\Grand Theft Auto V"
