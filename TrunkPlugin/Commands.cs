@@ -12,7 +12,6 @@ namespace TrunkPlugin
             Game.Console.Print();
             Game.Console.Print("Attempting to reload TrunkPlugin.ini");
             Settings.LoadSettings();
-            Game.Console.Print("Reloading TrunkPlugin.ini");
             Game.Console.Print("TrunkPlugin.ini has been reloaded succesfully");
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
