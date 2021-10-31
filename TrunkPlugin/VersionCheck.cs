@@ -4,17 +4,17 @@ using System.Net;
 
 namespace TrunkPlugin
 {
-    public class PluginCheck
+    public class VersionCheck
     {
         public static bool isUpdateAvailable()
         {
             string curVersion = Settings.CalloutVersion;
-            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.xml");
+            Uri latestVersionuri = new Uri("https://raw.githubusercontent.com/Lenny-del/TrunkPlugin/master/TrunkPlugin/version.xml");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
             try
             {
-                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin/blob/master/TrunkPlugin/version.xml").Trim();
+                receivedData = client.DownloadString("https://raw.githubusercontent.com/Lenny-del/TrunkPlugin/master/TrunkPlugin/version.xml").Trim();
             }
             catch (WebException)
             {

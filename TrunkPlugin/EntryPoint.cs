@@ -14,7 +14,7 @@ namespace TrunkPlugin
             TrunkPlugin.Main.MainFiber();
             Game.Console.Print("TrunkPlugin " + Assembly.GetExecutingAssembly().GetName().Version + " by Vielfalt has been initialised.");
             Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + " ~o~by Vielfalt", "~b~has been loaded succesfully!");
-            PluginCheck.isUpdateAvailable();
+            VersionCheck.isUpdateAvailable();
         }
     }
 }
