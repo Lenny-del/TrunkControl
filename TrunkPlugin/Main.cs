@@ -39,9 +39,9 @@ namespace TrunkPlugin
                     {
                         Game.LogTrivial("My eyes spotted an error here...");
                         Game.LogTrivial("TrunkPlugin Error. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
-                        Game.LogTrivial("======================================================");
+                        Game.LogTrivial("------------------------------------------------------");
                         Game.LogTrivial(e.ToString());
-                        Game.LogTrivial("======================================================");
+                        Game.LogTrivial("------------------------------------------------------");
                         Game.LogTrivial("TrunkPlugin Error End");
                     }
                 }

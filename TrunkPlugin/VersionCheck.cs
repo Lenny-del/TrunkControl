@@ -9,12 +9,12 @@ namespace TrunkPlugin
         public static bool isUpdateAvailable()
         {
             string curVersion = Settings.CalloutVersion;
-            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin");
+            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin/releases/download/stable/TrunkPlugin.rar");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
             try
             {
-                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin").Trim();
+                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin/releases/download/stable/TrunkPlugin.rar").Trim();
             }
             catch (WebException)
             {
@@ -33,6 +33,8 @@ namespace TrunkPlugin
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
                 Game.Console.Print("[WARNING] A new version of TrunkPlugin is available. Please update to the latest build.");
+                Game.Console.Print("Current version:  " + curVersion);
+                Game.Console.Print("New version:  " + receivedData);
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
