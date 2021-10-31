@@ -1,6 +1,6 @@
-﻿using System.Reflection;
+﻿using Rage;
+using System.Reflection;
 using System.Windows.Forms;
-using Rage;
 
 namespace TrunkPlugin
 {

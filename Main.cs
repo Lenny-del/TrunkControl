@@ -1,5 +1,5 @@
-﻿using System;
-using Rage;
+﻿using Rage;
+using System;
 
 namespace TrunkPlugin
 {
@@ -25,7 +25,7 @@ namespace TrunkPlugin
                             else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
 
                         }
-                         else if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
+                        else if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(true))
                             {
@@ -38,7 +38,7 @@ namespace TrunkPlugin
                     catch (Exception e)
                     {
                         Game.LogTrivial("My eyes spotted an error here...");
-                        Game.LogTrivial("TrunkPlugin Error Start. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
+                        Game.LogTrivial("TrunkPlugin Error. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
                         Game.LogTrivial("======================================================");
                         Game.LogTrivial(e.ToString());
                         Game.LogTrivial("======================================================");
