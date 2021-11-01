@@ -9,7 +9,7 @@ namespace TrunkPlugin
         static Rage.Object KeyProp;
         static bool DoesKeyExist => KeyProp && KeyProp.IsValid();
         */
-        internal static void MainFiber()
+        private static void MainFiber()
         {
             var process = new GameFiber(delegate
             {
