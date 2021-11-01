@@ -8,7 +8,7 @@ namespace TrunkPlugin
     {
         public static bool isUpdateAvailable()
         {
-            string curVersion = Settings.CalloutVersion;
+            string curVersion = Settings.PluginVersion;
             Uri latestVersionuri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=29933&textOnly=1");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
@@ -26,8 +26,9 @@ namespace TrunkPlugin
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
+                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
             }
-            if (receivedData != Settings.CalloutVersion)
+            if (receivedData != Settings.PluginVersion)
             {
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
@@ -38,11 +39,12 @@ namespace TrunkPlugin
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
+                Game.DisplayNotification("commonmenu", "mp_alerttriangle", "~w~TrunkPlugin Warning", "~y~A new Update is available!", "Current Version: ~r~" + curVersion + "~w~<br>New Version: ~g~" + receivedData + "<br>~r~Please update to the latest version!");
                 return true;
             }
             else
             {
-                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "~w~TrunkPlugin", "", "Detected latest version of TrunkPlugin.<br>Installed Version: ~g~" + curVersion + "");
+                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~Detected ~g~latest ~w~version of ~y~TrunkPlugin!");
                 return false;
             }
         }

@@ -1,5 +1,4 @@
 ﻿using Rage;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace TrunkPlugin
@@ -8,7 +7,7 @@ namespace TrunkPlugin
     {
         internal static Keys TrunkKey = Keys.T;
         internal static ControllerButtons TrunkButton = ControllerButtons.None;
-        internal static readonly string CalloutVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        internal static readonly string PluginVersion = "0.3";
 
         internal static void LoadSettings()
         {
