@@ -9,12 +9,12 @@ namespace TrunkPlugin
         public static bool isUpdateAvailable()
         {
             string curVersion = Settings.CalloutVersion;
-            Uri latestVersionuri = new Uri("https://github.com/Lenny-del/TrunkPlugin/");
+            Uri latestVersionuri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=29933&textOnly=1");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
             try
             {
-                receivedData = client.DownloadString("https://github.com/Lenny-del/TrunkPlugin/").Trim();
+                receivedData = client.DownloadString("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=29933&textOnly=1").Trim();
             }
             catch (WebException)
             {
