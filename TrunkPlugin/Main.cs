@@ -5,36 +5,13 @@ namespace TrunkPlugin
 {
     internal class Main
     {
-        /*public static Ped MainPlayer => Game.LocalPlayer.Character;
-        static Rage.Object KeyProp;
-        static bool DoesKeyExist => KeyProp && KeyProp.IsValid();
-        */
-        private static void MainFiber()
+        internal static void MainFiber()
         {
             var process = new GameFiber(delegate
             {
                 while (true)
                 {
                     GameFiber.Yield();
-                    /* if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
-                    {
-                        if (!DoesKeyExist)
-                        {
-                            KeyProp = new Rage.Object("p_car_keys_01", MainPlayer.Position) { IsPersistent = true };
-                        }
-                        AnimationTask CarKeyClick = MainPlayer.Tasks.PlayAnimation("anim@mp_player_intmenu@key_fob@", "fob_click", 1f, AnimationFlags.SecondaryTask | AnimationFlags.UpperBodyOnly);
-                        //For the offset and rotation, use Menyoo object spawner, find the object you need and use the attachment + manual placement feature
-                        KeyProp.AttachTo(MainPlayer, MainPlayer.GetBoneIndex(PedBoneId.RightHand), new Vector3(0.1400f, 0.0400f, 0.0100f), new Rotator(4.2500f, 1.4400f, 2.4600f));
-                        while (CarKeyClick.IsActive)
-                        {
-                            GameFiber.Yield();
-                        }
-                        if (DoesKeyExist)
-                        {
-                            KeyProp.Delete();
-                        }
-                    }
-                    */
                     try
                     {
                         if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
