@@ -26,7 +26,7 @@ namespace TrunkPlugin
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
-                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
+                Game.DisplayNotification("char_default", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
             }
             if (receivedData != Settings.PluginVersion)
             {
@@ -44,7 +44,7 @@ namespace TrunkPlugin
             }
             else
             {
-                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~Detected ~g~latest ~w~version of ~y~TrunkPlugin!");
+                Game.DisplayNotification("char_default", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~Detected ~g~latest ~w~version of ~y~TrunkPlugin!");
                 return false;
             }
         }
