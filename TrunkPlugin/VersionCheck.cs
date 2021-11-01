@@ -27,6 +27,7 @@ namespace TrunkPlugin
                 Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
                 Game.Console.Print();
                 Game.DisplayNotification("char_default", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
+                return false;
             }
             if (receivedData != Settings.PluginVersion)
             {
