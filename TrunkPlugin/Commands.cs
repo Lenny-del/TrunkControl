@@ -16,7 +16,7 @@ namespace TrunkPlugin
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkPlugin -------------------------------------");
             Game.Console.Print();
-            Game.DisplayNotification("char_default", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~TrunkPlugin.ini has been reloaded ~g~succesfully!");
+            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkPlugin", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~TrunkPlugin.ini has been reloaded ~g~succesfully!");
         }
     }
 }
