@@ -7,7 +7,7 @@ namespace TrunkControl
     {
         internal static Keys TrunkKey = Keys.T;
         internal static ControllerButtons TrunkButton = ControllerButtons.None;
-        internal static readonly string PluginVersion = "0.3";
+        internal static readonly string PluginVersion = "1.0";
 
         internal static void LoadSettings()
         {
