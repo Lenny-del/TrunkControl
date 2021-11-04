@@ -38,12 +38,16 @@ namespace TrunkControl
                     }
                     catch (Exception e)
                     {
-                        Game.LogTrivial("My eyes spotted an error here...");
-                        Game.LogTrivial("TrunkControl Error. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
-                        Game.LogTrivial("------------------------------------------------------");
-                        Game.LogTrivial(e.ToString());
-                        Game.LogTrivial("------------------------------------------------------");
-                        Game.LogTrivial("TrunkControl Error End");
+                        Game.Console.Print();
+                        Game.Console.Print("------------------------------------- TrunkControl [WARNING] -------------------------------------");
+                        Game.Console.Print();
+                        Game.Console.Print("My eyes spotted an error here...");
+                        Game.Console.Print("TrunkControl Error. Please report any issues here: https://discord.gg/rR6Hq8WKcm");
+                        Game.Console.Print();
+                        Game.Console.Print(e.ToString());
+                        Game.Console.Print();
+                        Game.Console.Print("------------------------------------- TrunkControl [WARNING] -------------------------------------");
+                        Game.Console.Print();
                     }
                 }
             });
