@@ -1,7 +1,7 @@
 ﻿using Rage;
 using System.Windows.Forms;
 
-namespace TrunkPlugin
+namespace TrunkControl
 {
     internal static class Settings
     {
@@ -11,13 +11,13 @@ namespace TrunkPlugin
 
         internal static void LoadSettings()
         {
-            Game.Console.Print("Loading TrunkPlugin config file");
-            var path = "Plugins/TrunkPlugin/TrunkPlugin.ini";
+            Game.Console.Print("Loading TrunkControl config file");
+            var path = "Plugins/TrunkControl/TrunkControl.ini";
             var ini = new InitializationFile(path);
             ini.Create();
             TrunkKey = ini.ReadEnum("Keys", "TrunkKey", Keys.T);
             TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TrunkButton", ControllerButtons.None);
-            Game.Console.Print("TrunkPlugin: Config loaded.");
+            Game.Console.Print("TrunkControl: Config loaded.");
         }
     }
 }

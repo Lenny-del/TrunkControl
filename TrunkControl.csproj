@@ -7,8 +7,8 @@
     <ProjectGuid>{3039353B-22A5-4401-AF1A-387C454C7B0A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TrunkPlugin</RootNamespace>
-    <AssemblyName>TrunkPlugin</AssemblyName>
+    <RootNamespace>TrunkControl</RootNamespace>
+    <AssemblyName>TrunkControl</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -46,15 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TrunkPlugin\Commands.cs" />
-    <Compile Include="TrunkPlugin\EntryPoint.cs" />
-    <Compile Include="TrunkPlugin\Main.cs" />
+    <Compile Include="TrunkControl\Commands.cs" />
+    <Compile Include="TrunkControl\EntryPoint.cs" />
+    <Compile Include="TrunkControl\Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrunkPlugin\Settings.cs" />
-    <Compile Include="TrunkPlugin\VersionCheck.cs" />
+    <Compile Include="TrunkControl\Settings.cs" />
+    <Compile Include="TrunkControl\VersionCheck.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="TrunkPlugin\TrunkPlugin.ini" />
+    <None Include="TrunkControl\TrunkControl.ini" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

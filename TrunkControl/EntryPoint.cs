@@ -3,8 +3,8 @@ using Rage.Attributes;
 using System;
 using System.Net;
 
-[assembly: Plugin("TrunkPlugin", Description = "Let's you open your trunk with 1 button click", Author = "Vielfalt")]
-namespace TrunkPlugin
+[assembly: Plugin("TrunkControl", Description = "Let's you open your trunk with 1 button click", Author = "Vielfalt")]
+namespace TrunkControl
 {
     public class EntryPoint
     {
@@ -16,8 +16,8 @@ namespace TrunkPlugin
             string receivedData = string.Empty;
             Game.AddConsoleCommands();
             Settings.LoadSettings();
-            TrunkPlugin.Main.MainFiber();
-            Game.Console.Print("TrunkPlugin " + Settings.PluginVersion + " by Vielfalt has been initialised.");
+            TrunkControl.Main.MainFiber();
+            Game.Console.Print("TrunkControl " + Settings.PluginVersion + " by Vielfalt has been initialised.");
             VersionCheck.isUpdateAvailable();
         }
     }

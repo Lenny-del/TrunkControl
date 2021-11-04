@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TrunkPlugin")]
+[assembly: AssemblyTitle("TrunkControl")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TrunkPlugin")]
+[assembly: AssemblyProduct("TrunkControl")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
