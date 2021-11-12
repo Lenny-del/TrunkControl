@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RAGENativeUI">
+      <HintPath>D:\Program Files\RockstarGames\Grand Theft Auto V\RAGENativeUI.dll</HintPath>
+    </Reference>
     <Reference Include="RagePluginHookSDK">
       <HintPath>D:\Program Files\RockstarGames\Grand Theft Auto V\SDK\RagePluginHookSDK.dll</HintPath>
     </Reference>
@@ -50,6 +53,7 @@
     <Compile Include="TrunkControl\EntryPoint.cs" />
     <Compile Include="TrunkControl\Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrunkControl\Menu.cs" />
     <Compile Include="TrunkControl\Settings.cs" />
     <Compile Include="TrunkControl\VersionCheck.cs" />
   </ItemGroup>

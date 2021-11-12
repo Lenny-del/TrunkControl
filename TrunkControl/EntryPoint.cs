@@ -17,6 +17,7 @@ namespace TrunkControl
             Game.AddConsoleCommands();
             Settings.LoadSettings();
             TrunkControl.Main.MainFiber();
+            TrunkControl.RNUIMenu.LoadMenu();
             Game.Console.Print("TrunkControl " + Settings.PluginVersion + " by Vielfalt has been initialised.");
             VersionCheck.isUpdateAvailable();
         }
