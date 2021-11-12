@@ -1,9 +1,15 @@
-Credits:
+**Credits**
 
--SuperPyroManiac for open sourcing TurnOffThatEngine which helped me learn a few things about non-LSPDFR plugins
+-Vincentsgm (helping me fix various issues, always being helpful with development questions)
 
--Thota and Vincent for helping me fix various issues
+-sEbi3 (Open sourcing UnitedCallouts, always being helpful with development questions)
 
--JeffDaDawg for keeping me motivated to continue working on the project
+-Thota (helping me fix various issues)
 
--sEbi3 for open sourcing UnitedCallouts and helping with the version checker
+-JeffDaDawg (Making suggestions about new features or enhancements, editing the banner)
+
+-Charlie686 (testing)
+
+-SuperPyroManiac (Putting his "SuperPlugins" on github, TurnOffThatEngine being extra helpful)
+
+-6ixFilms (Showing off his screenshot skills, providing the plugin pictures)
