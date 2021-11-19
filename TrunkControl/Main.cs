@@ -18,10 +18,9 @@ namespace TrunkControl
                         {
                             if (Game.LocalPlayer.Character.IsInAnyVehicle(false))
                             {
-                                VehicleDoor[] door = Game.LocalPlayer.Character.CurrentVehicle.GetDoors();
-                                if (!door[door.Length - 1].IsOpen) door[door.Length - 1].Open(false);
-                                else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(false);
-
+                                VehicleDoor[] door = Game.LocalPlayer.Character.LastVehicle.GetDoors();
+                                if (door[door.Length - 1].IsOpen) door[door.Length - 1].Open(true);
+                                else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(true);
                             }
                             else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
 
