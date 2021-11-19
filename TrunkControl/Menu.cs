@@ -28,8 +28,7 @@ namespace TrunkControl
                 while (true)
                 {
                     Menuone.ProcessMenus();
-
-                    if (Game.IsKeyDown(Settings.MenuKey))
+                    if (Game.IsKeyDown(Settings.MenuKey) || Game.IsControllerButtonDown(Settings.MenuButton))
                     {
                         if (UIone.Visible)
                         {
