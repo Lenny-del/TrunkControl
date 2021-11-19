@@ -1,15 +1,13 @@
-﻿using System;
-using Rage;
+﻿using Rage;
 using RAGENativeUI;
 using RAGENativeUI.Elements;
 using RAGENativeUI.PauseMenu;
-using System.Windows.Forms;
 
 namespace TrunkControl
 {
     public class RNUIMenu
     {
-       internal static UIMenu UIone;
+        internal static UIMenu UIone;
         internal static MenuPool Menuone;
         internal static UIMenuItem _Item1;
         internal static UIMenuItem _Item2;
@@ -23,9 +21,9 @@ namespace TrunkControl
 
             Menuone.Add(UIone);
             UIone.AddItem(_Item1);
-            
 
-            GameFiber.StartNew(delegate 
+
+            GameFiber.StartNew(delegate
             {
                 while (true)
                 {
@@ -51,16 +49,15 @@ namespace TrunkControl
         {
             if (SelectedItem == _Item1)
             {
-                //if (!Game.LocalPlayer.Character.Inventory.Weapons.Contains("weapon_fireextinguisher"))
                 {
                     Game.LocalPlayer.Character.Inventory.GiveNewWeapon("weapon_fireextinguisher", 100, true);
                     Game.DisplayNotification("You grabbed your Fire Extinguisher");
                 }
-                    UIone.AddItem(_Item2);
-                    UIone.RemoveItemAt(0);
-                    UIone.RefreshIndex();
-                    UIone.Visible = false;                                                      //Make Menu disappear after button press, add code (ex. Grab extinguisher) in if (SelectedItem == ItemXY
-                
+                UIone.AddItem(_Item2);
+                UIone.RemoveItemAt(0);
+                UIone.RefreshIndex();
+                UIone.Visible = false;                                                      //Make Menu disappear after button press, add code (ex. Grab extinguisher) in if (SelectedItem == ItemXY
+
             }
 
             if (SelectedItem == _Item2)
@@ -70,11 +67,11 @@ namespace TrunkControl
                     Game.LocalPlayer.Character.Inventory.Weapons.Remove("weapon_fireextinguisher");
                     Game.DisplayNotification("You stored your Fire Extinguisher");
                 }
-                    UIone.AddItem(_Item1);
-                    UIone.RemoveItemAt(0);
-                    UIone.RefreshIndex();
-                    UIone.Visible = false;
-                
+                UIone.AddItem(_Item1);
+                UIone.RemoveItemAt(0);
+                UIone.RefreshIndex();
+                UIone.Visible = false;
+
             }
         }
     }
