@@ -19,7 +19,7 @@ namespace TrunkControl
             TrunkKey = ini.ReadEnum("Keys", "TrunkKey", Keys.T);
             TrunkButton = ini.ReadEnum<ControllerButtons>("Controller", "TrunkButton", ControllerButtons.None);
             MenuKey = ini.ReadEnum("Keys", "MenuKey", Keys.F5);
-            Game.Console.Print("TrunkControl: Config loaded.");
+            Game.Console.Print("TrunkControl Config loaded.");
         }
     }
 }

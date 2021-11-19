@@ -19,6 +19,8 @@ namespace TrunkControl
             TrunkControl.Main.MainFiber();
             TrunkControl.RNUIMenu.LoadMenu();
             Game.Console.Print("TrunkControl " + Settings.PluginVersion + " by Vielfalt has been initialised.");
+            Game.Console.Print("TrunkControl TrunkKey: " + Settings.TrunkKey);
+            Game.Console.Print("TrunkControl TrunkButton: " + Settings.TrunkButton);
             VersionCheck.isUpdateAvailable();
         }
     }
