@@ -12,6 +12,9 @@ namespace TrunkControl
 
         internal static void LoadSettings()
         {
+            Game.Console.Print();
+            Game.Console.Print("------------------------------------- TrunkControl -------------------------------------");
+            Game.Console.Print();
             Game.Console.Print("Loading TrunkControl config file");
             var path = "Plugins/TrunkControl/TrunkControl.ini";
             var ini = new InitializationFile(path);
