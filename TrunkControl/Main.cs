@@ -16,14 +16,13 @@ namespace TrunkControl
                     {
                         if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
                         {
-                            if (Game.LocalPlayer.Character.IsInAnyVehicle(false))
+                            if (Game.LocalPlayer.Character.IsInAnyVehicle(false) && Game.LocalPlayer.Character.CurrentVehicle && Game.LocalPlayer.Character.CurrentVehicle.Speed < 2f)
                             {
                                 VehicleDoor[] door = Game.LocalPlayer.Character.CurrentVehicle.GetDoors();
                                 if (!door[door.Length - 1].IsOpen) door[door.Length - 1].Open(false);
                                 else if (door[door.Length - 1].IsOpen) door[door.Length - 1].Close(false);
                             }
-                            else Game.DisplayHelp("~r~You are not in your vehicle!", 3000);
-
+                            else Game.DisplayHelp("~y~Your current speed is too high or you aren't in your vehicle!", 3500);
                         }
                         else if (Game.IsKeyDown(Settings.TrunkKey) || Game.IsControllerButtonDown(Settings.TrunkButton))
                         {
