@@ -28,7 +28,8 @@ namespace TrunkControl
                 while (true)
                 {
                     Menuone.ProcessMenus();
-                    if (Game.IsKeyDown(Settings.MenuKey) || Game.IsControllerButtonDown(Settings.MenuButton))
+                    
+                    if (Game.IsKeyDown(Settings.MenuKey) || Game.IsControllerButtonDown(Settings.MenuButton) && Game.LocalPlayer.Character.IsInAnyVehicle(false))
                     {
                         if (UIone.Visible)
                         {
