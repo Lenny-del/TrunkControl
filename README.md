@@ -10,6 +10,6 @@
 
 -Charlie686 (testing)
 
--SuperPyroManiac (Putting his "SuperPlugins" on github, TurnOffThatEngine being extra helpful)
+-SuperPyroManiac (Publishing his "SuperPlugins" on github, TurnOffThatEngine being extra helpful)
 
 -6ixFilms (Showing off his screenshot skills, providing the plugin pictures)
