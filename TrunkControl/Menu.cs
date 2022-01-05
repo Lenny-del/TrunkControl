@@ -18,18 +18,18 @@ namespace TrunkControl
             Menuone = new MenuPool();
             _Item1 = new UIMenuItem("Grab Fire Extinguisher");
             _Item2 = new UIMenuItem("Store Fire Extinguisher");
-
             Menuone.Add(UIone);
             UIone.AddItem(_Item1);
-
+            UIone.MouseControlsEnabled = false;
+            UIone.AllowCameraMovement = true;
 
             GameFiber.StartNew(delegate
             {
                 while (true)
                 {
                     Menuone.ProcessMenus();
-                    
-                    if (Game.IsKeyDown(Settings.MenuKey) || Game.IsControllerButtonDown(Settings.MenuButton) && Game.LocalPlayer.Character.IsInAnyVehicle(false))
+
+                    if (Game.IsKeyDown(Settings.MenuKey) && Game.LocalPlayer.Character.IsInAnyVehicle(false) || Game.IsControllerButtonDown(Settings.MenuButton) && Game.LocalPlayer.Character.IsInAnyVehicle(false))
                     {
                         if (UIone.Visible)
                         {
