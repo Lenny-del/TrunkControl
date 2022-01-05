@@ -1,5 +1,9 @@
 **Credits**
 
+-Vielfalt 
+
+-Alexguirre (Developing RageNativeUI)
+
 -Vincentsgm (helping me fix various issues, always being helpful with development questions)
 
 -sEbi3 (Open sourcing UnitedCallouts, always being helpful with development questions)
