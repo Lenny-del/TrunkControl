@@ -1,7 +1,5 @@
 ﻿using Rage;
 using Rage.Attributes;
-using System;
-using System.Net;
 
 [assembly: Plugin("TrunkControl", Description = "Let's you open your trunk with 1 button click", Author = "Vielfalt")]
 namespace TrunkControl
