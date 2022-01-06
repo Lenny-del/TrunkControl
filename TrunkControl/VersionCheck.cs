@@ -14,7 +14,7 @@ namespace TrunkControl
             string receivedData = string.Empty;
             try
             {
-                receivedData = client.DownloadString("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=36974&textOnly=1").Trim();
+                receivedData = client.DownloadString(latestVersionuri).Trim();
             }
             catch (WebException)
             {
