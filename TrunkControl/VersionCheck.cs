@@ -9,7 +9,7 @@ namespace TrunkControl
         public static bool isUpdateAvailable()
         {
             string curVersion = Settings.PluginVersion;
-            Uri latestVersionuri = new Uri("https://lenny-del.github.io/version");
+            Uri latestVersionuri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=36974&textOnly=1");
             WebClient client = new WebClient();
             string receivedData = string.Empty;
             try
