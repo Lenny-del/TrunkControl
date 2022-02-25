@@ -6,15 +6,15 @@ namespace TrunkControl
 {
     public class VersionCheck
     {
-        public static bool isUpdateAvailable()
+        public static bool IsUpdateAvailable()
         {
-            string curVersion = Settings.PluginVersion;
-            Uri latestVersionuri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=36974&textOnly=1");
-            WebClient client = new WebClient();
-            string receivedData = string.Empty;
+            var curVersion = Settings.PluginVersion;
+            var latestVersionuri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=36974&textOnly=1");
+            var client = new WebClient();
+            Version receivedData;
             try
             {
-                receivedData = client.DownloadString(latestVersionuri).Trim();
+                receivedData = new Version(client.DownloadString(latestVersionuri).Trim());
             }
             catch (WebException)
             {
@@ -29,7 +29,7 @@ namespace TrunkControl
                 Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
                 return false;
             }
-            if (receivedData != Settings.PluginVersion)
+            if (curVersion.CompareTo(receivedData) < 0)
             {
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkControl [WARNING] -------------------------------------");
