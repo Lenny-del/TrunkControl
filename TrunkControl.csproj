@@ -31,12 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RAGENativeUI">
-      <HintPath>D:\Program Files\RockstarGames\Grand Theft Auto V\RAGENativeUI.dll</HintPath>
-    </Reference>
-    <Reference Include="RagePluginHookSDK">
-      <HintPath>D:\Program Files\RockstarGames\Grand Theft Auto V\SDK\RagePluginHookSDK.dll</HintPath>
-    </Reference>
+    <Reference Include="LSPD First Response" />
+    <Reference Include="RAGENativeUI" />
+    <Reference Include="RagePluginHookSDK" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />

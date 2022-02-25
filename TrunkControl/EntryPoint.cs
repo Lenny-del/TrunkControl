@@ -20,7 +20,7 @@ namespace TrunkControl
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkControl -------------------------------------");
             Game.Console.Print();
-            VersionCheck.isUpdateAvailable();
+            VersionCheck.IsUpdateAvailable();
         }
     }
 }
