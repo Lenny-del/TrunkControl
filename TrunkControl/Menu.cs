@@ -14,7 +14,7 @@ namespace TrunkControl
 
         public static void LoadMenu()
         {
-            UIone = new UIMenu($"~y~TrunkControl", $"~y~TrunkControl ~w~Menu ~o~by Vielfalt ~y~v {Settings.PluginVersion}");
+            UIone = new UIMenu($"~y~TrunkControl", $"~y~TrunkControl ~w~Menu ~o~by Lenny ~y~v {Settings.PluginVersion}");
             Menuone = new MenuPool();
             _Item1 = new UIMenuItem("Grab Fire Extinguisher");
             _Item2 = new UIMenuItem("Store Fire Extinguisher");

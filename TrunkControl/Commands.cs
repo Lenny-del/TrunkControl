@@ -16,7 +16,7 @@ namespace TrunkControl
             Game.Console.Print();
             Game.Console.Print("------------------------------------- TrunkControl -------------------------------------");
             Game.Console.Print();
-            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~TrunkControl.ini has been reloaded ~g~succesfully!");
+            Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Lenny", "~w~TrunkControl.ini has been reloaded ~g~succesfully!");
         }
     }
 }

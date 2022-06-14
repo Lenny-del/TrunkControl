@@ -6,7 +6,7 @@ Please do not re-distribute or publish the code as your own work.
 
 **Credits**
 
--Vielfalt 
+-Lenny 
 
 -Alexguirre (Developing RageNativeUI)
 

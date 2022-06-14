@@ -26,7 +26,7 @@ namespace TrunkControl
                 Game.Console.Print();
                 Game.Console.Print("------------------------------------- TrunkControl [WARNING] -------------------------------------");
                 Game.Console.Print();
-                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
+                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Lenny", "~r~Couldn't check for latest version! <br>~w~Please make sure you are ~y~connected ~w~to the internet or ~y~reload ~w~the plugin.");
                 return false;
             }
             if (curVersion.CompareTo(receivedData) < 0)
@@ -45,7 +45,7 @@ namespace TrunkControl
             }
             else
             {
-                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Vielfalt", "~w~Detected ~g~latest ~w~version of ~y~TrunkControl!");
+                Game.DisplayNotification("web_lossantospolicedept", "web_lossantospolicedept", "TrunkControl", "~y~v" + Settings.PluginVersion + " ~o~by Lenny", "~w~Detected ~g~latest ~w~version of ~y~TrunkControl!");
                 return false;
             }
         }
