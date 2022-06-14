@@ -31,9 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LSPD First Response" />
-    <Reference Include="RAGENativeUI" />
-    <Reference Include="RagePluginHookSDK" />
+    <Reference Include="LSPD First Response">
+      <HintPath>D:\Programme\VisualStudio\references\LSPD First Response.dll</HintPath>
+    </Reference>
+    <Reference Include="RAGENativeUI">
+      <HintPath>D:\Programme\VisualStudio\references\RAGENativeUI.dll</HintPath>
+    </Reference>
+    <Reference Include="RagePluginHookSDK">
+      <HintPath>D:\Programme\VisualStudio\references\RagePluginHookSDK.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -59,11 +65,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>SET GTA="D:\Program Files\RockstarGames\Grand Theft Auto V"
-
-if exist %25GTA%25 (
-  copy /Y "$(TargetDir)$(ProjectName).dll" "D:\Program Files\RockstarGames\Grand Theft Auto V\Plugins\$(ProjectName).dll"
-  copy /Y "$(TargetDir)$(ProjectName).pdb" "D:\Program Files\RockstarGames\Grand Theft Auto V\Plugins\$(ProjectName).pdb"
-)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
