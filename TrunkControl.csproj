@@ -65,7 +65,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>SET GTA="D:\Programme\Rockstar Games\Grand Theft Auto V\"
+
+if exist %25GTA%25 (
+  copy /Y "$(TargetDir)$(ProjectName).dll" "D:\Programme\Rockstar Games\Grand Theft Auto V\plugins\$(ProjectName).dll"
+  copy /Y "$(TargetDir)$(ProjectName).pdb" "D:\Programme\Rockstar Games\Grand Theft Auto V\plugins\$(ProjectName).pdb"
+)</PostBuildEvent>
   </PropertyGroup>
 </Project>
