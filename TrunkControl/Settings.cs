@@ -10,7 +10,7 @@ namespace TrunkControl
         internal static Keys MenuKey = Keys.F5;
         internal static ControllerButtons TrunkButton = ControllerButtons.None;
         internal static ControllerButtons MenuButton = ControllerButtons.None;
-        internal static readonly Version PluginVersion = new Version(1, 2, 0, 0);
+        public static readonly string PluginVersion = "1.2";
 
         internal static void LoadSettings()
         {
