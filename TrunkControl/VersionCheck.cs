@@ -9,6 +9,7 @@ namespace TrunkControl
         public static bool IsUpdateAvailable()
         {
             string curVersion = Settings.PluginVersion;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             Uri latestVersionUri = new Uri("https://www.lcpdfr.com/applications/downloadsng/interface/api.php?do=checkForUpdates&fileId=36974&textOnly=1");
             WebClient webClient = new WebClient();
             string receivedData = string.Empty;
